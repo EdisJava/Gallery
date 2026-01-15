@@ -50,8 +50,7 @@ RESOURCES += \
     resource.qrc
 
 TRANSLATIONS += \
-        ch03_gallery_core_es_ES.qm \
-        language-esp.qm
+        translations/ch03_gallery_core_es_ES.ts
 
 DISTFILES +=
 

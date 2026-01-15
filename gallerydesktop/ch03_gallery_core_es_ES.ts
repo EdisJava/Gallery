@@ -13,6 +13,21 @@
         <source>Create</source>
         <translation>Nuevo</translation>
     </message>
+    <message>
+        <location filename="albumlistwidget.cpp" line="68"/>
+        <source>Create a new Album</source>
+        <translation>Nuevo Album</translation>
+    </message>
+    <message>
+        <location filename="albumlistwidget.cpp" line="68"/>
+        <source>Choose a name</source>
+        <translation>Escriba un nombre</translation>
+    </message>
+    <message>
+        <location filename="albumlistwidget.cpp" line="69"/>
+        <source>New album</source>
+        <translation>Album nuevo</translation>
+    </message>
 </context>
 <context>
     <name>AlbumWidget</name>
@@ -32,12 +47,12 @@
         <translation>Añadir</translation>
     </message>
     <message>
-        <location filename="albumwidget.ui" line="82"/>
+        <location filename="albumwidget.ui" line="83"/>
         <source>Edit</source>
         <translation>Editar</translation>
     </message>
     <message>
-        <location filename="albumwidget.ui" line="104"/>
+        <location filename="albumwidget.ui" line="106"/>
         <source>Delete</source>
         <translation>Borrar</translation>
     </message>
@@ -57,6 +72,11 @@
         <source>MainWindow</source>
         <translation></translation>
     </message>
+    <message>
+        <location filename="mainwindow.cpp" line="16"/>
+        <source>Gallery</source>
+        <translation>Galeria</translation>
+    </message>
 </context>
 <context>
     <name>PictureWidget</name>
@@ -66,17 +86,17 @@
         <translation></translation>
     </message>
     <message>
-        <location filename="picturewidget.ui" line="47"/>
+        <location filename="picturewidget.ui" line="53"/>
         <source>Back</source>
         <translation>Atras</translation>
     </message>
     <message>
-        <location filename="picturewidget.ui" line="80"/>
-        <source>lorem ipsum.jpg</source>
+        <location filename="picturewidget.ui" line="97"/>
+        <source>lorem ipsum.png</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="picturewidget.ui" line="126"/>
+        <location filename="picturewidget.ui" line="75"/>
         <source>Delete</source>
         <translation>Borrar</translation>
     </message>

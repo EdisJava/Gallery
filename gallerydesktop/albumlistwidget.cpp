@@ -65,11 +65,8 @@ void AlbumListWidget::createAlbum()
     }
     bool ok;
     QString albumName = QInputDialog::getText(this,
-                                              "Create a new Album",
-                                              "Choose an name",
-                                              QLineEdit::Normal,
-                                              "New album",
-                                              &ok);
+     tr("Create a new Album"),tr("Choose a name"),
+     QLineEdit::Normal,tr("New album"),&ok);
     if (ok && !albumName.isEmpty()) {
         Album album(albumName);
         QModelIndex createdIndex = mAlbumModel->addAlbum(album);

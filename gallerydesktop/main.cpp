@@ -9,12 +9,31 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
 
 
+    QLocale locale;
+    QString language = locale.name().section('_', 0, 0); // "es", "en", etc.
+    qDebug() << "Idioma del sistema:" << language;
+
     QTranslator translator;
-    if(translator.load("/translation/ch03_gallery_core_es_ES.qm")) {
+    if(language == "es") {
+        // Cargar traducción solo si el idioma es español
+        if(translator.load(":/translations/translations/ch03_gallery_core_es_ES.qm")) {
+            a.installTranslator(&translator);
+            qDebug() << "Traducción española cargada.";
+        } else {
+            qDebug() << "No se pudo cargar app_es.qm";
+        }
+    }
+
+
+
+
+
+   /* QTranslator translator;
+    if(translator.load(":/translations/translations/ch03_gallery_core_es_ES.qm")) {
         a.installTranslator(&translator);
     }  else {
         qDebug() << "No se pudo cargar el .qm";
-    }
+    }*/
 
     // Ver qué formatos de imagen están soportados
     qDebug() << "=== Formatos de imagen soportados ===";

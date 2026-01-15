@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/translations">
+        <file>language-esp.qm</file>
+        <file>ch03_gallery_core_es_ES.qm</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>logo.png</file>
+        <file>adelante.png</file>
+        <file>atras.png</file>
+        <file>basura.png</file>
+        <file>deshacer.png</file>
+        <file>editar.png</file>
+        <file>nuevo.png</file>
+    </qresource>
+</RCC>

@@ -13,9 +13,22 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#MainWindow {
+    background: qlineargradient(
+        x1:0, y1:0, x2:0, y2:1,
+        stop:0 #FFA500,   /* naranja */
+        stop:1 #FFFF66    /* amarillo */
+    );
+}</string>
+  </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
    <item>
-    <widget class="AlbumListWidget" name="albumListWidget" native="true"/>
+    <widget class="AlbumListWidget" name="albumListWidget" native="true">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
    </item>
    <item>
     <widget class="AlbumWidget" name="albumWidget" native="true">
@@ -30,6 +43,9 @@
        <width>199</width>
        <height>601</height>
       </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
      </property>
     </widget>
    </item>

@@ -9,7 +9,6 @@ class AlbumListWidget;
 }
 
 class AlbumModel;
-
 class AlbumListWidget : public QWidget
 {
     Q_OBJECT
@@ -20,12 +19,14 @@ public:
     void setModel(AlbumModel* model);
     void setSelectionModel(QItemSelectionModel* selectionModel);
 
-private slots:
-    void createAlbum();
-
 private:
     Ui::AlbumListWidget* ui;
     AlbumModel* mAlbumModel = nullptr;
+
+private slots:
+    void createAlbum();
+
+
 };
 
 #endif // ALBUMLISTWIDGET_H

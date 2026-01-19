@@ -6,6 +6,7 @@
 namespace Ui {
 class MainWindow;
 }
+
 class GalleryWidget;
 class PictureWidget;
 class MainWindow : public QMainWindow
@@ -14,9 +15,11 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+
 public slots:
     void displayGallery();
     void displayPicture(const QModelIndex& index);
+
 private:
     Ui::MainWindow *ui;
     GalleryWidget* mGalleryWidget;

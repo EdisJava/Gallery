@@ -21,9 +21,6 @@ public:
     explicit GalleryWidget(QWidget* parent = nullptr);
     ~GalleryWidget();
 
-    // ---------------------
-    // Setters para modelos y selection models
-    // ---------------------
     void setAlbumModel(AlbumModel* model);
     void setAlbumSelectionModel(QItemSelectionModel* selectionModel);
 
@@ -31,21 +28,22 @@ public:
     void setPictureSelectionModel(QItemSelectionModel* selectionModel);
 
 signals:
-    void pictureActivated(const QModelIndex& index); // para MainWindow
-
-private slots:
-    void onPictureActivated(const QModelIndex& index);
+    void pictureActivated(const QModelIndex& index);
 
 private:
     Ui::GalleryWidget* ui;
 
-    // Widgets internos
+
     AlbumListWidget* mAlbumListWidget;
     AlbumWidget* mAlbumWidget;
 
-    // Selection models almacenados
+
     QItemSelectionModel* mAlbumSelectionModel = nullptr;
     QItemSelectionModel* mPictureSelectionModel = nullptr;
+
+private slots:
+    void onPictureActivated(const QModelIndex& index);
+
 };
 
 #endif // GALLERYWIDGET_H

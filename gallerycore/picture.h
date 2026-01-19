@@ -1,6 +1,7 @@
 #include <QUrl>
 #include <QString>
 #include "gallerycore_global.h"
+
 class GALLERYCORE_EXPORT Picture
 {
 public:
@@ -8,12 +9,13 @@ public:
     Picture(const QUrl& fileUrl);
 
     int id() const;
-    void setId(int id);
-
     int albumId() const;
+
+    void setId(int id);
     void setAlbumId(int albumId);
-    QUrl fileUrl() const;
     void setFileUrl(const QUrl& fileUrl);
+
+    QUrl fileUrl() const;
 
 private:
     int mId;
